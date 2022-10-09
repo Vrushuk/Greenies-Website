@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet">
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./logo/favicon.png" type="image/x-icon">
+  <title>Greenies</title>
+  <!-- CSS file -->
+  <link rel="stylesheet" href="./css/contact.css">
+  <!-- EmailJS -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("user_FU6FGYaKZI4xrtYg5ZjDn");
+    })();
+    </script>
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css
+">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav>
+    <input id="nav-toggle" type="checkbox">
+    <h1 id="logo"></h1>
+    <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="donate.html">Donate</a></li>
+            <li><a href="donate.html">Collaborate</a></li>
+            <li><a href="#">Contact</a></li>
+    </ul>
+    <label for="nav-toggle" class="icon-burger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </label>
+  </nav>
+  
+  <!-- Form -->
+  <form class="contact" id="contactForm">
+    <h1 id="formtitle"></h1>
+    <div class="text">
+      <label>Full name :</label>
+      <input type="text" id="fname" required placeholder="Enter your good name !"/>
+    </div>
+    <div class="text">
+      <label>Email :</label>
+      <input type="email" id="mail" required placeholder="Enter your email ID"/>
+    </div>
+    <div class="text">
+      <label>Mobile no. :</label>
+      <input type="number" id="mob" required placeholder="Enter your mobile number"/>
+    </div>
+    <div class="text">
+      <label>Message :</label>
+      <textarea type="text" id="msg" required placeholder="Enter your message"></textarea>
+    </div>
+    <button class="button" id="btn" type="submit" onclick="e()">Send</button>
+  </form>
+  
+   <!-- Footer -->
+  
+   <footer>
+    <p>
+      <h4>Copyright 2021 | By Team <a href="https://github.com/sumitvajarinkar"><span>Greenies</span></a>&nbsp;<img
+          src="./logo/favicon.png" alt=""></a></h4>
+      </p>
+  </footer>
+  
+  <!-- Typewriter library -->
+  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+  <!-- External JS file -->
+  <script src="./js/contact.js"></script>
+  <!-- Sweet alert -->
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css
+  "></script>
+  </body>
+
+</html>
